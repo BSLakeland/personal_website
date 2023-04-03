@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>My First Web Page</title>
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+
+        * {
+            box-sizing: border-box;
+        }
+    
+        .header {
+            border: 1px solid red;
+            padding: 15px;
+        }
+    
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        /* For mobile phones: */
+        [class*="col-"] {
+        width: 100%;
+        }
+
+
+        .bottom{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        @media only screen and (min-width: 600px) {
+        /* For tablets: */
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+
+
+        }
+
+        @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        }
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            /* border: 1px solid red; */
+        }
+
+        .button {
+            background-color: none; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    
+        .fit{position: absolute;
+    height: 100%;
+    width: 100%;}
+
+        h1{
+            text-align: center;
+            margin-top: 25vh;
+        }
+        p{
+            text-align: center;
+        }
+
+        img {
+            width: 30%;
+            max-width: 100%;
+            height: auto;
+            margin-left: 35%;
+            margin-right: 35%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1><div top="50%">Ben Lakeland</div></h1>
+    <div class="image">
+        <img src="IMG_2252.jpeg" alt="A photo of me."/>
+    </div>
+
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-3 col-s-8 button">CV</div>
+        <div class="col-3 col-s-8 button">Projects</div>
+        <div class="col-3 col-s-8 button">Contact</div>
+    </div>
+
+    <div class="bottom">
+        <p>© 2020 Ben Lakeland</p>
+    </div>
+</body>
+</html>
